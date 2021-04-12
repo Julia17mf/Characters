@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/char_profile"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/kuroko"/>
+
+        <TextView
+            android:id="@+id/char_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kuroko Tetsuya"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/char_profile"/>
+
+        <Button
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/char_profile"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/char_name"
+            android:layout_marginLeft="40dp" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
